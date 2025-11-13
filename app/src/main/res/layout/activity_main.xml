@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#101010"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:gravity="end"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="#00FF88"
+        android:gravity="end"
+        android:layout_marginBottom="16dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- Linha 1 -->
+        <Button android:id="@+id/btn7" android:text="7" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btn8" android:text="8" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btn9" android:text="9" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btnDivide" android:text="÷" style="@style/Operators_Button"/>
+
+        <!-- Linha 2 -->
+        <Button android:id="@+id/btn4" android:text="4" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btn5" android:text="5" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btn6" android:text="6" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btnMultiply" android:text="×" style="@style/Operators_Button"/>
+
+        <!-- Linha 3 -->
+        <Button android:id="@+id/btn1" android:text="1" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btn2" android:text="2" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btn3" android:text="3" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btnSubtract" android:text="−" style="@style/Operators_Button"/>
+
+        <!-- Linha 4 -->
+        <Button android:id="@+id/btn0" android:text="0" style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btnDot" android:text="." style="@style/Numbers_Button"/>
+        <Button android:id="@+id/btnClear" android:text="C" style="@style/Operators_Button"/>
+        <Button android:id="@+id/btnAdd" android:text="+" style="@style/Operators_Button"/>
+
+        <!-- Linha 5 -->
+        <Button
+            android:id="@+id/btnEquals"
+            android:text="="
+            android:layout_columnSpan="4"
+            android:backgroundTint="#00FF88"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </GridLayout>
+</LinearLayout>
